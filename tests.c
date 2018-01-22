@@ -72,14 +72,14 @@ int			main(void)
 	printf("'1' => %c\n", ft_tolower('1'));
 	printf("'$' => %c\n", ft_tolower('$'));
 
-	// printf("\n---------------------\n");
-	// printf("ft_toupper:\n");
-	// printf("'a' => %c\n", ft_toupper('a'));
-	// printf("'A' => %c\n", ft_toupper('A'));
-	// printf("'Z' => %c\n", ft_toupper('Z'));
-	// printf("'z' => %c\n", ft_toupper('z'));
-	// printf("'1' => %c\n", ft_toupper('1'));
-	// printf("'$' => %c\n", ft_toupper('$'));
+	printf("\n---------------------\n");
+	printf("ft_toupper:\n");
+	printf("'a' => %c\n", ft_toupper('a'));
+	printf("'A' => %c\n", ft_toupper('A'));
+	printf("'Z' => %c\n", ft_toupper('Z'));
+	printf("'z' => %c\n", ft_toupper('z'));
+	printf("'1' => %c\n", ft_toupper('1'));
+	printf("'$' => %c\n", ft_toupper('$'));
 	
 	// printf("\n---------------------\n");
 	// printf("ft_bzero:\n");
