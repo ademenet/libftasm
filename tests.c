@@ -51,14 +51,17 @@ int			main(void)
 	printf("'s' => %d\n", ft_isascii(115));
 	printf("1300 => %d\n", ft_isascii(1300));
 
-	// printf("\n---------------------\n");
-	// printf("ft_isprint:\n");
-	// printf("1 => %d\n", ft_isprint(1));
-	// printf("'@' => %d\n", ft_isprint(64));
-	// printf("'A' => %d\n", ft_isprint(65));
-	// printf("']' => %d\n", ft_isprint(93));
-	// printf("127 => %d\n", ft_isprint(127));
-	// printf("1300 => %d\n", ft_isprint(1300));
+	printf("\n---------------------\n");
+	printf("ft_isprint:\n");
+	printf("1 => %d\n", ft_isprint(1));
+	printf("31 => %d\n", ft_isprint(31));
+	printf("32 => %d\n", ft_isprint(32));
+	printf("'@' => %d\n", ft_isprint(64));
+	printf("'A' => %d\n", ft_isprint(65));
+	printf("']' => %d\n", ft_isprint(93));
+	printf("126 => %d\n", ft_isprint(126));
+	printf("127 => %d\n", ft_isprint(127));
+	printf("1300 => %d\n", ft_isprint(1300));
 
 	// printf("\n---------------------\n");
 	// printf("ft_tolower:\n");
