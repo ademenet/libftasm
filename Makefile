@@ -1,27 +1,34 @@
-.PHONY: clean fclean
-
 NAME = libfts.a
 
-ASMCC = nasm
+SOURCES = ft_isalpha.s
 
-CC = ld
+OBJECTS = $(SOURCES:.s=.o)
 
-SOURCES = ft_bzero.asm
+CC = gcc
 
-OBJECTS = $(SOURCES:.c=.o)
+all: $(NAME)
 
-$(NAME):
-	nasm -f macho64 $(SOURCES)
+$(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
 	# ld -macosx_version_min 10.7.0 $(OBJECTS)
 
-all: $(NAME)
+%.o: %.s ./libfts.h
+	nasm -f macho64 $<
+
+tests: $(OBJECTS) tests.c
+	$(CC) tests.c libfts.a -o tests
 
 clean:
 	rm -rf $(OBJECTS)
 
-fclean: clean
+tclean:
+	# rm tests.o
+	# rm a.out
+
+fclean: clean tclean
 	rm $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean re tests
