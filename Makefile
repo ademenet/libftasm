@@ -6,6 +6,7 @@ SOURCES = 	ft_bzero.s\
 			ft_isascii.s\
 			ft_isdigit.s\
 			ft_isprint.s\
+			ft_strcat.s\
 			ft_tolower.s\
 			ft_toupper.s
 
