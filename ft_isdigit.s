@@ -7,7 +7,7 @@ _ft_isdigit:
 	cmp		rbx, 48
 	jl		false			; < '0'	--> false
 	cmp		rbx, 57
-	jg		false			; > '9'	--> true
+	jg		false			; > '9'	--> false
 	mov		rax, 1
 	leave
 	ret
