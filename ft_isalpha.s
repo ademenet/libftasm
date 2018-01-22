@@ -1,10 +1,10 @@
 section .text
-    global ft_isalpha
+	global _ft_isalpha
 
-ft_isalpha:
+_ft_isalpha:
     ; mov		rbp
 	; mov		rbp, rsp
-	enter
+	enter	0, 0
 	mov		rbx, rdi
 	cmp		rbx, 65
 	jl		cmp_97			; < 'A'		--> cmp_97
@@ -16,10 +16,10 @@ cmp_97:
 	cmp		rbx, 122
 	jg		false			; > 'z'		--> false
 true:
-	mov		eax, 1
+	mov		rax, 1
 	jmp 	end
 false:
-	mov		eax, 0
+	mov		rax, 0
 end:
 	leave
 	ret
