@@ -63,14 +63,14 @@ int			main(void)
 	printf("127 => %d\n", ft_isprint(127));
 	printf("1300 => %d\n", ft_isprint(1300));
 
-	// printf("\n---------------------\n");
-	// printf("ft_tolower:\n");
-	// printf("'a' => %c\n", ft_tolower('a'));
-	// printf("'A' => %c\n", ft_tolower('A'));
-	// printf("'Z' => %c\n", ft_tolower('Z'));
-	// printf("'z' => %c\n", ft_tolower('z'));
-	// printf("'1' => %c\n", ft_tolower('1'));
-	// printf("'$' => %c\n", ft_tolower('$'));
+	printf("\n---------------------\n");
+	printf("ft_tolower:\n");
+	printf("'a' => %c\n", ft_tolower('a'));
+	printf("'A' => %c\n", ft_tolower('A'));
+	printf("'Z' => %c\n", ft_tolower('Z'));
+	printf("'z' => %c\n", ft_tolower('z'));
+	printf("'1' => %c\n", ft_tolower('1'));
+	printf("'$' => %c\n", ft_tolower('$'));
 
 	// printf("\n---------------------\n");
 	// printf("ft_toupper:\n");

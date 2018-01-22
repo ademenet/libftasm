@@ -5,7 +5,8 @@ SOURCES = \
 			ft_isalpha.s\
 			ft_isascii.s\
 			ft_isdigit.s\
-			ft_isprint.s
+			ft_isprint.s\
+			ft_tolower.s
 
 OBJECTS = $(SOURCES:.s=.o)
 
