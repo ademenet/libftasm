@@ -2,15 +2,15 @@
 #include <string.h>
 #include "./libfts.h"
 
-// char *ft_display_bzero(int i)
-// {
-// 	char s[101] = "salut toi !";
-// 	char *s2;
+static char	*ft_display_bzero(int i)
+{
+	char s[101] = "salut toi !";
+	char *s2;
 
-// 	ft_bzero(s, i);
-// 	s2 = strdup(s);
-// 	return (s2);
-// }
+	ft_bzero(s, i);
+	s2 = strdup(s);
+	return (s2);
+}
 
 int			main(void)
 {
@@ -81,13 +81,13 @@ int			main(void)
 	printf("'1' => %c\n", ft_toupper('1'));
 	printf("'$' => %c\n", ft_toupper('$'));
 	
-	// printf("\n---------------------\n");
-	// printf("ft_bzero:\n");
-	// printf("'2' => %s\n", ft_display_bzero(2));
-	// printf("'11' => %s\n", ft_display_bzero(11));
-	// printf("'100' => %s\n", ft_display_bzero(100));
-	// printf("'12' => %s\n", ft_display_bzero(12));
-	// printf("'10' => %s\n", ft_display_bzero(10));
+	printf("\n---------------------\n");
+	printf("ft_bzero:\n");
+	printf("'2' => %s\n", ft_display_bzero(2));
+	printf("'11' => %s\n", ft_display_bzero(11));
+	printf("'100' => %s\n", ft_display_bzero(100));
+	printf("'12' => %s\n", ft_display_bzero(12));
+	printf("'10' => %s\n", ft_display_bzero(10));
 
 		
 	// printf("\n---------------------\n");

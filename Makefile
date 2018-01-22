@@ -1,6 +1,6 @@
 NAME = libfts.a
 
-SOURCES = \
+SOURCES = 	ft_bzero.s\
 			ft_isalnum.s\
 			ft_isalpha.s\
 			ft_isascii.s\
