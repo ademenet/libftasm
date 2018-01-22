@@ -33,14 +33,14 @@ int			main(void)
 	printf("'A' => %d\n", ft_isdigit('A'));
 	printf("56761 => %d\n", ft_isdigit(56761));
 
-	// printf("\n---------------------\n");
-	// printf("ft_isalnum:\n");
-	// printf("'1' => %d\n", ft_isalnum(49));
-	// printf("'@' => %d\n", ft_isalnum(64));
-	// printf("'A' => %d\n", ft_isalnum(65));
-	// printf("']' => %d\n", ft_isalnum(93));
-	// printf("'s' => %d\n", ft_isalnum(115));
-	// printf("1300 => %d\n", ft_isalnum(1300));
+	printf("\n---------------------\n");
+	printf("ft_isalnum:\n");
+	printf("'1' => %d\n", ft_isalnum('1'));
+	printf("'@' => %d\n", ft_isalnum(64));
+	printf("'A' => %d\n", ft_isalnum('A'));
+	printf("']' => %d\n", ft_isalnum(93));
+	printf("'s' => %d\n", ft_isalnum(115));
+	printf("1300 => %d\n", ft_isalnum(1300));
 
 	printf("\n---------------------\n");
 	printf("ft_isascii:\n");
