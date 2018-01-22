@@ -1,6 +1,8 @@
 NAME = libfts.a
 
-SOURCES = ft_isalpha.s
+SOURCES = \
+			ft_isalpha.s\
+			ft_isdigit.s
 
 OBJECTS = $(SOURCES:.s=.o)
 

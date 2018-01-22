@@ -23,14 +23,15 @@ int			main(void)
 	printf("'s' => %d\n", ft_isalpha(115));
 	printf("130 => %d\n", ft_isalpha(130));
 
-	// printf("\n---------------------\n");
-	// printf("ft_isdigit:\n");
-	// printf("'\\n' => %d\n", ft_isdigit(10));
-	// printf("'/' => %d\n", ft_isdigit(47));
-	// printf("'0' => %d\n", ft_isdigit(48));
-	// printf("'9' => %d\n", ft_isdigit(57));
-	// printf("':' => %d\n", ft_isdigit(58));
-	// printf("'A' => %d\n", ft_isdigit('A'));
+	printf("\n---------------------\n");
+	printf("ft_isdigit:\n");
+	printf("'\\n' => %d\n", ft_isdigit(10));
+	printf("'/' => %d\n", ft_isdigit(47));
+	printf("'0' => %d\n", ft_isdigit(48));
+	printf("'9' => %d\n", ft_isdigit(57));
+	printf("':' => %d\n", ft_isdigit(58));
+	printf("'A' => %d\n", ft_isdigit('A'));
+	printf("56761 => %d\n", ft_isdigit(56761));
 
 	// printf("\n---------------------\n");
 	// printf("ft_isalnum:\n");
