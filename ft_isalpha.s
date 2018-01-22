@@ -2,8 +2,6 @@ section .text
 	global _ft_isalpha
 
 _ft_isalpha:
-    ; mov		rbp
-	; mov		rbp, rsp
 	enter	0, 0
 	mov		rbx, rdi
 	cmp		rbx, 65
