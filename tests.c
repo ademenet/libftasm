@@ -42,14 +42,14 @@ int			main(void)
 	// printf("'s' => %d\n", ft_isalnum(115));
 	// printf("1300 => %d\n", ft_isalnum(1300));
 
-	// printf("\n---------------------\n");
-	// printf("ft_isascii:\n");
-	// printf("'1' => %d\n", ft_isascii(49));
-	// printf("'@' => %d\n", ft_isascii(64));
-	// printf("'A' => %d\n", ft_isascii(65));
-	// printf("']' => %d\n", ft_isascii(93));
-	// printf("'s' => %d\n", ft_isascii(115));
-	// printf("1300 => %d\n", ft_isascii(1300));
+	printf("\n---------------------\n");
+	printf("ft_isascii:\n");
+	printf("'1' => %d\n", ft_isascii(49));
+	printf("'@' => %d\n", ft_isascii(64));
+	printf("'A' => %d\n", ft_isascii(65));
+	printf("']' => %d\n", ft_isascii(93));
+	printf("'s' => %d\n", ft_isascii(115));
+	printf("1300 => %d\n", ft_isascii(1300));
 
 	// printf("\n---------------------\n");
 	// printf("ft_isprint:\n");
