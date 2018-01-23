@@ -109,14 +109,14 @@ int			main(void)
 	// ft_puts("TEST!");
 	// ft_puts(NULL);
 
-	// printf("\n---------------------\n");
-	// printf("ft_strlen:\n");
-	// printf("True: %zu = Mine: %zu\n", strlen("Test 1"), ft_strlen("Test 1"));
-	// printf("True: %zu = Mine: %zu\n", strlen("a"), ft_strlen("a"));
-	// printf("True: %zu = Mine: %zu\n", strlen(""), ft_strlen(""));
-	// printf("True: %zu = Mine: %zu\n", strlen("Test 123456789"), ft_strlen("Test 123456789"));
-	// printf("True: %zu = Mine: %zu\n", strlen("\0Test 123456"), ft_strlen("\0Test 123456"));
-	// printf("True: %zu = Mine: %zu\n", strlen("Test 123456\0789"), ft_strlen("Test 123456\0789"));
+	printf("\n---------------------\n");
+	printf("ft_strlen:\n");
+	printf("True: %zu = Mine: %zu\n", strlen("Test 1"), ft_strlen("Test 1"));
+	printf("True: %zu = Mine: %zu\n", strlen("a"), ft_strlen("a"));
+	printf("True: %zu = Mine: %zu\n", strlen(""), ft_strlen(""));
+	printf("True: %zu = Mine: %zu\n", strlen("Test 123456789"), ft_strlen("Test 123456789"));
+	printf("True: %zu = Mine: %zu\n", strlen("\0Test 123456"), ft_strlen("\0Test 123456"));
+	printf("True: %zu = Mine: %zu\n", strlen("Test 123456\0789"), ft_strlen("Test 123456\0789"));
 
 	// printf("\n---------------------\n");
 	// printf("ft_memset:\n");
