@@ -11,7 +11,8 @@ reach_end:
 	add		rbx, 1
 	jmp		reach_end
 strcat:
-	mov		rbx, rdx
+	mov		al, byte [rdx]
+	mov		byte [rbx], al
 	add		rbx, 1
 	add		rdx, 1
 	cmp		byte [rdx], 0
@@ -19,5 +20,6 @@ strcat:
 	jmp		strcat
 end:
 	mov		byte [rbx], 0
+	mov		rax, rdi
 	leave
 	ret

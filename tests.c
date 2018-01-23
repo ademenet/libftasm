@@ -90,15 +90,15 @@ int			main(void)
 	printf("'10' => %s\n", ft_display_bzero(10));
 
 		
-	// printf("\n---------------------\n");
-	// printf("ft_strcat:\n");
-	// char str[50];
-	// str[0] = '\0';
-	// printf("'je ' => %s\n", ft_strcat(str, "je "));
-	// printf("'suis ' => %s\n", ft_strcat(str, "suis "));
-	// printf("'' => %s\n", ft_strcat(str, ""));
-	// printf("'un ' => %s\n", ft_strcat(str, "un "));
-	// printf("'TEST!' => %s\n", ft_strcat(str, "TEST!"));
+	printf("\n---------------------\n");
+	printf("ft_strcat:\n");
+	char str[50];
+	str[0] = '\0';
+	printf("'je ' => %s\n", ft_strcat(str, "je "));
+	printf("'suis ' => %s\n", ft_strcat(str, "suis "));
+	printf("'' => %s\n", ft_strcat(str, ""));
+	printf("'un ' => %s\n", ft_strcat(str, "un "));
+	printf("'TEST!' => %s\n", ft_strcat(str, "TEST!"));
 
 	// printf("\n---------------------\n");
 	// printf("ft_puts:\n");
