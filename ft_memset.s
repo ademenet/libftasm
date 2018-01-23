@@ -9,7 +9,7 @@ _ft_memset:
 	mov			rax, rsi
 	mov			rcx, rdx
 	cld
-    rep			stosb
+    rep stosb
 end:
 	mov			rax, rbx
 	leave
