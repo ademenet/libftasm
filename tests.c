@@ -117,6 +117,8 @@ int			main(void)
 	printf("True: %zu = Mine: %zu\n", strlen("Test 123456789"), ft_strlen("Test 123456789"));
 	printf("True: %zu = Mine: %zu\n", strlen("\0Test 123456"), ft_strlen("\0Test 123456"));
 	printf("True: %zu = Mine: %zu\n", strlen("Test 123456\0789"), ft_strlen("Test 123456\0789"));
+	printf("True: %zu = Mine: %zu\n", strlen("-1"), ft_strlen("-1"));
+	printf("True: %zu = Mine: %zu\n", strlen("\0"), ft_strlen("\0"));
 
 	printf("\n---------------------\n");
 	printf("ft_memset:\n");
