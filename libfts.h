@@ -6,7 +6,7 @@
 /*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 10:54:51 by ademenet          #+#    #+#             */
-/*   Updated: 2018/01/25 17:14:28 by ademenet         ###   ########.fr       */
+/*   Updated: 2018/01/25 19:01:36 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 */
 
 int             ft_bzero(void *s, size_t n);
+int             ft_cat(int fd);
 int             ft_isalnum(int c);
 int             ft_isalpha(int c);
 int             ft_isascii(int c);

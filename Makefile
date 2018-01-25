@@ -1,6 +1,7 @@
 NAME = libfts.a
 
 SOURCES = 	ft_bzero.s\
+			ft_cat.s\
 			ft_isalnum.s\
 			ft_isalpha.s\
 			ft_isascii.s\
@@ -31,6 +32,7 @@ $(NAME): $(OBJECTS)
 
 tests: $(OBJECTS) tests.c
 	$(CC) tests.c libfts.a -o tests
+	$(CC) ft_cat.c libfts.a -o ft_cat
 
 clean:
 	rm -rf $(OBJECTS)
