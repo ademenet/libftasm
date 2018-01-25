@@ -4,7 +4,7 @@ section .text
 _ft_memcpy:
 	push		rbp
 	mov			rbp, rsp
-	cmp			rbx, 0
+	cmp			rdx, 0
 	je			end
 	mov			rbx, rdi	; save *dst
 	mov			rax, rdi	; dst
