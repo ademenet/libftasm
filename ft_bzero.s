@@ -2,7 +2,8 @@ section .text
 	global _ft_bzero
 
 _ft_bzero:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp	
 	mov		rbx, rdi
 	mov		rcx, rsi
 loop_1:

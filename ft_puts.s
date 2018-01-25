@@ -14,7 +14,8 @@ section .text
 	extern write
 
 _ft_puts:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	cmp		rdi, 0
 	jle		null
 	mov		rbx, rdi

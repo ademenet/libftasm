@@ -2,7 +2,8 @@ section .text
 	global _ft_memset
 
 _ft_memset:
-	enter		0, 0
+	push		rbp
+	mov			rbp, rsp
 	cmp			rbx, 0
 	je			end
 	mov			rbx, rdi	; save 1st arg

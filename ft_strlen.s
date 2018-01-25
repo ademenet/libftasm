@@ -2,7 +2,8 @@ section .text
 	global _ft_strlen
 
 _ft_strlen:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	cmp		rdi, 0		; if str == NULL
 	je		null
 	sub		rcx, rcx	; rcx = rcx - rcx = 0

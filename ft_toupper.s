@@ -2,7 +2,8 @@ section .text
 	global _ft_toupper
 
 _ft_toupper:
-	enter	0, 0
+	push    rbp
+    mov     rbp, rsp
     mov     rbx, rdi
     cmp     rbx, 97
     jl      end

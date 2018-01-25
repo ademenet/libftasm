@@ -2,7 +2,8 @@ section .text
 	global _ft_isascii
 
 _ft_isascii:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	mov		rbx, rdi
 	cmp		rbx, 0
 	jl		false			; < 0	--> false

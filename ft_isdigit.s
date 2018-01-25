@@ -2,7 +2,8 @@ section .text
 	global _ft_isdigit
 
 _ft_isdigit:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	mov		rbx, rdi
 	cmp		rbx, 48
 	jl		false			; < '0'	--> false

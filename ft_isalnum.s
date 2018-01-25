@@ -4,7 +4,8 @@ section .text
 	extern _ft_isalpha
 
 _ft_isalnum:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	call	_ft_isalpha
 	cmp		rax, 1
 	je		true

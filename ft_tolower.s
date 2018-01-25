@@ -2,7 +2,8 @@ section .text
 	global _ft_tolower
 
 _ft_tolower:
-	enter	0, 0
+	push    rbp
+    mov     rbp, rsp
     mov     rbx, rdi
     cmp     rbx, 65
     jl      end

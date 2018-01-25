@@ -2,7 +2,8 @@ section .text
 	global _ft_strcat
 
 _ft_strcat:
-	enter	0, 0
+	push	rbp
+	mov		rbp, rsp
 	mov		rbx, rdi
 	mov		rdx, rsi
 reach_end:

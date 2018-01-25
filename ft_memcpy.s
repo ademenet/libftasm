@@ -2,7 +2,8 @@ section .text
 	global _ft_memcpy
 
 _ft_memcpy:
-	enter		0, 0
+	push		rbp
+	mov			rbp, rsp
 	cmp			rbx, 0
 	je			end
 	mov			rbx, rdi	; save *dst
