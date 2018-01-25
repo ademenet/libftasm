@@ -100,14 +100,14 @@ int			main(void)
 	printf("'un ' => %s\n", ft_strcat(str, "un "));
 	printf("'TEST!' => %s\n", ft_strcat(str, "TEST!"));
 
-	// printf("\n---------------------\n");
-	// printf("ft_puts:\n");
-	// ft_puts("je");
-	// ft_puts("suis");
-	// ft_puts("");
-	// ft_puts("un");
-	// ft_puts("TEST!");
-	// ft_puts(NULL);
+	printf("\n---------------------\n");
+	printf("ft_puts:\n");
+	ft_puts("je");
+	ft_puts("suis");
+	ft_puts("");
+	ft_puts("un");
+	ft_puts("TEST!");
+	ft_puts(NULL);
 
 	printf("\n---------------------\n");
 	printf("ft_strlen:\n");
