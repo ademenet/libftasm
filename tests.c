@@ -143,5 +143,16 @@ int			main(void)
 	printf("%s\n", ft_memcpy(dst, src2, 1));
 	printf("%s\n", ft_memcpy(dst, src2, 5));
 	printf("%s\n", ft_memcpy(dst, src3, 3));
+
+	printf("\n---------------------\n");
+	printf("ft_strdup:\n");
+	char s1[50] = "Ceci est un TEST. YeaH !!!";
+	// char s1[50] = "";
+	// char *s1 = NULL;
+	char *s2;
+	printf("s1 = %s\ns2 = %s\n", s1, s2);
+	s2 = ft_strdup(s1);
+	printf("s1 = %s\ns2 = %s\n", s1, s2);
+
 	return (0);
 }

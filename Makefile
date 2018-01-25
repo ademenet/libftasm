@@ -10,6 +10,7 @@ SOURCES = 	ft_bzero.s\
 			ft_memset.s\
 			ft_puts.s\
 			ft_strcat.s\
+			ft_strdup.s\
 			ft_strlen.s\
 			ft_tolower.s\
 			ft_toupper.s
