@@ -19,22 +19,12 @@ _ft_puts:
 	cmp		rdi, 0
 	jle		null
 	mov		rbx, rdi
-	; call	_ft_strlen
-	; cmp		rax, 0
-	; jle		null
-	mov		rcx, 0
-count:
-	cmp		byte[rbx + rcx], 0
-	je		print
-	inc		rcx
-	jmp		count
-print:
-	mov		rdx, rcx ; len
-	cmp		rdx, 0
-	je		null
+	call	_ft_strlen
+	cmp		rax, 0
+	jle		null
+	mov		rdx, rax ; len
 	mov		rdi, STDOUT
 	mov		rsi, rbx
-	; mov		rdx, rax
 	mov		rax, MACH_SYSCALL(WRITE)
 	syscall
 	lea		rsi, [rel string.newline]
