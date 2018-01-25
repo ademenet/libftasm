@@ -19,4 +19,4 @@ null:
 	mov		rax, 0
 end:
 	leave
-	ret		
+	ret
