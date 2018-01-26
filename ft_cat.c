@@ -1,11 +1,11 @@
 #include <fcntl.h>
 #include <unistd.h>
-#include <libfts.h>
+#include "libfts.h"
 
 int			main(int argc, char **argv)
 {
 	int		fd;
-	int		i = 0;
+	int		i = 1;
 
 	if (argc > 1)
 	{
@@ -16,6 +16,11 @@ int			main(int argc, char **argv)
 			close(fd);
 			i++;
 		}
+	}
+	else
+	{
+		fd = 0;
+		ft_cat(0);
 	}
 	return (0);
 }
