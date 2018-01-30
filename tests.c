@@ -147,12 +147,31 @@ int			main(void)
 	printf("\n---------------------\n");
 	printf("ft_strdup:\n");
 	char s1[50] = "Ceci est un TEST. YeaH !!!";
-	// char s1[50] = "";
-	// char *s1 = NULL;
 	char *s2;
 	printf("s1 = %s\ns2 = %s\n", s1, s2);
 	s2 = ft_strdup(s1);
 	printf("s1 = %s\ns2 = %s\n", s1, s2);
 
+	printf("\n---BONUS-------------\n");
+	printf("\n---------------------\n\n");
+	
+	printf("\n---------------------\n");
+	printf("ft_putnbr:\n");
+	ft_putnbr(12);
+	// printf("%d\n", INT32_MAX);
+	// printf("%d\n", INT32_MIN);
+	// printf(":);
+
+	printf("\n---------------------\n");
+	printf("ft_abs:\n");
+	printf("|%d| = %d\n", 0, ft_abs(0));
+	printf("|%d| = %d\n", 1, ft_abs(1));
+	printf("|%d| = %d\n", -1, ft_abs(-1));
+	printf("|%d| = %d\n", 9812981, ft_abs(9812981));
+	printf("|%d| = %d\n", -9812981, ft_abs(-9812981));
+	printf("|%d| = %d\n", INT32_MAX, ft_abs(INT32_MAX));
+	printf("|%d| = %d\n", INT32_MIN, ft_abs(INT32_MIN));
+
+	printf("END\n");
 	return (0);
 }

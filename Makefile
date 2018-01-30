@@ -1,6 +1,7 @@
 NAME = libfts.a
 
-SOURCES = 	ft_bzero.s\
+SOURCES = 	ft_abs.s\
+			ft_bzero.s\
 			ft_cat.s\
 			ft_isalnum.s\
 			ft_isalpha.s\
@@ -9,6 +10,7 @@ SOURCES = 	ft_bzero.s\
 			ft_isprint.s\
 			ft_memcpy.s\
 			ft_memset.s\
+			ft_putnbr.s\
 			ft_puts.s\
 			ft_strcat.s\
 			ft_strdup.s\
