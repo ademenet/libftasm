@@ -4,43 +4,49 @@
 %define BUFF_SIZE			11
 
 section .data
-buffer:
-	.buff times BUFF_SIZE db 0
-	.len equ $ - buffer.buff
+string: db 11
 
 section .text
 	extern _ft_abs
+	extern _ft_putchar
 	global _ft_putnbr
-
-; rcx : inc le compteur de 1 a chaque fois
 
 _ft_putnbr:
 	push        rbp
 	mov         rbp, rsp
 
-	mov			r9, buffer.buff
-	inc			rcx							; rcx++ (len++)
-
-	; cmp			edi, 0
-	; cmp			edi, 10
-
-	; je			eor							; if (nb == 0) { goto eor; }
+	cmp			edi, 0			; if (nb < 0) { nb = ft_abs(nb) }
+	jge			is_positive
+	call		_ft_abs
 	
-	; sub			rsp, BUFF_SIZE			; pour stack >> ms pas besoin ?
+	mov			r9, rdi
+	mov			rdi, 0x2d
+	call		_ft_putchar
+	mov			rdi, r9
 
-	; mov			eax, 10
-	; div			edi							; ax = quotient and ah = remainder
-	; add			ah, 48						; 'nb' = nb + 48
-	; mov			r9, rcx							; stock char (byte) in buffer
-	; inc			r9
-	; call		_ft_putnbr
-; eor:
-	; cmp			; ???
-	; mov			rdi, STDOUT					; int fildes
-	; mov			rsi, buffer.buff			; const void *buf
-	; mov			rdx, rcx					; size_t nbyte
-	; mov		    rax, MACH_SYSCALL(WRITE)
-	; syscall
+	mov			edi, eax
+	; TODO  ajouter un - a afficher
+is_positive:
+	cmp			edi, 10			; if (nb < 10) { goto end; }
+	jl			end
+
+	xor			edx, edx
+	mov			eax, edi
+	mov			ecx, 10
+	div			ecx
+
+	mov			edi, eax
+	call		_ft_putnbr
 end:
+	xor			edx, edx
+	mov			eax, edi
+	mov			ecx, 10
+	div			ecx
+
+	add			edx, 48
+
+	mov			rdi, rdx
+	call		_ft_putchar
+
 	leave
 	ret

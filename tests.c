@@ -154,10 +154,18 @@ int			main(void)
 
 	printf("\n---BONUS-------------\n");
 	printf("\n---------------------\n\n");
-	
+
+	printf("\n---------------------\n");
+	printf("ft_putchar:\n");
+	ft_putchar('a');
+	ft_putchar('z');
+	ft_putchar('\n');
+
 	printf("\n---------------------\n");
 	printf("ft_putnbr:\n");
 	ft_putnbr(12);
+	ft_putchar('\n');
+	ft_putnbr(-12);
 	// printf("%d\n", INT32_MAX);
 	// printf("%d\n", INT32_MIN);
 	// printf(":);
@@ -172,6 +180,14 @@ int			main(void)
 	printf("|%d| = %d\n", INT32_MAX, ft_abs(INT32_MAX));
 	printf("|%d| = %d\n", INT32_MIN, ft_abs(INT32_MIN));
 
-	printf("END\n");
+	printf("\n---------------------\n");
+	printf("ft_strchr:\n");
+	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'c'));
+	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'U'));
+	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'u'));
+	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", '\0'));
+	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'z'));
+
+	// printf("\nEND\n");
 	return (0);
 }

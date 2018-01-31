@@ -10,9 +10,11 @@ SOURCES = 	ft_abs.s\
 			ft_isprint.s\
 			ft_memcpy.s\
 			ft_memset.s\
+			ft_putchar.s\
 			ft_putnbr.s\
 			ft_puts.s\
 			ft_strcat.s\
+			ft_strchr.s\
 			ft_strdup.s\
 			ft_strlen.s\
 			ft_tolower.s\
