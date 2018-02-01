@@ -4,9 +4,9 @@ section .text
 _ft_memset:
 	push		rbp
 	mov			rbp, rsp
+	mov			rbx, rdi	; save 1st arg
 	cmp			rbx, 0
 	je			end
-	mov			rbx, rdi	; save 1st arg
 	mov			rax, rsi
 	mov			rcx, rdx
 	cld

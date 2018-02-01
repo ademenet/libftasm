@@ -1,3 +1,6 @@
+section .data
+	nullstr: db "(null)"
+
 section .text
 	extern _ft_strlen
 	global _ft_strchr
@@ -20,11 +23,12 @@ _ft_strchr:
 	mov			rdi, r9
 	cld
 	repne scasb
+	jne			null
 	dec			rdi
 	mov			rax, rdi
 	jmp			end
 null:
-	mov			rax, 0
+	lea			rax, [rel nullstr]
 end:
 	leave
 	ret

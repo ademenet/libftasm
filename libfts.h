@@ -6,7 +6,7 @@
 /*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 10:54:51 by ademenet          #+#    #+#             */
-/*   Updated: 2018/01/31 17:29:22 by ademenet         ###   ########.fr       */
+/*   Updated: 2018/02/01 11:31:58 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,9 @@ int             ft_toupper(int c);
 
 int				ft_abs(int nb);
 char            *ft_strchr(const char *s, int c);
+void			*ft_strclr(char *s);
+char			*ft_strnew(size_t len);
 void			ft_putchar(char c);
-void			ft_putnbr(int nb);
+void			ft_putsfd(char const *s, int fd);
 
 #endif

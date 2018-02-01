@@ -1,3 +1,6 @@
+section .data
+null: db 10
+
 section .text
 	global _ft_strdup
 	extern _malloc
@@ -24,7 +27,8 @@ _ft_strdup:
 	mov			rax, r9
 	jmp			end
 error:
-	mov			rax, 0
+	; mov			rax, 0
+	lea			rax, [rel null]
 end:
 	leave
 	ret

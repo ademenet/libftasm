@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <fcntl.h>
+#include <stdlib.h>
 #include "./libfts.h"
 
 static char	*ft_display_bzero(int i)
@@ -162,15 +164,6 @@ int			main(void)
 	ft_putchar('\n');
 
 	printf("\n---------------------\n");
-	printf("ft_putnbr:\n");
-	ft_putnbr(12);
-	ft_putchar('\n');
-	ft_putnbr(-12);
-	// printf("%d\n", INT32_MAX);
-	// printf("%d\n", INT32_MIN);
-	// printf(":);
-
-	printf("\n---------------------\n");
 	printf("ft_abs:\n");
 	printf("|%d| = %d\n", 0, ft_abs(0));
 	printf("|%d| = %d\n", 1, ft_abs(1));
@@ -182,12 +175,44 @@ int			main(void)
 
 	printf("\n---------------------\n");
 	printf("ft_strchr:\n");
-	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'c'));
-	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'U'));
-	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'u'));
-	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", '\0'));
-	printf("\"%s\" = \"%s\"\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'z'));
+	printf("%s = %s\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'c'));
+	printf("%s = %s\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'U'));
+	printf("%s = %s\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'u'));
+	printf("%s = %s\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", '\0'));
+	printf("%s = %s\n", "Une petite phrase au calme.", ft_strchr("Une petite phrase au calme.", 'z'));
 
-	// printf("\nEND\n");
+	printf("\n---------------------\n");
+	printf("ft_putsfd:\n");
+	ft_putsfd("je", 1);
+	ft_putsfd("suis", 0);
+	ft_putsfd("", 1);
+	ft_putsfd("un", 2);
+	ft_putsfd("TEST!", 0);
+	ft_putsfd(NULL, 1);
+
+	printf("\n---------------------\n");
+	printf("ft_strclr:\n");
+	char str_toclr[19] = "Salut ! C'est moi !";
+	char *str_clrd;
+	printf("Before: %s\n", str_toclr);
+	str_clrd = ft_strclr(str_toclr);
+	printf("After: %s\n", str_clrd);
+	int i = 19;
+	while (i > 0) {
+		printf("%0x ", (*str_clrd));
+		str_clrd++;
+		i--;
+	}
+	printf("\n");
+
+	printf("\n---------------------\n");
+	printf("ft_strnew:\n");
+	char *nstr;
+	nstr = ft_strnew(46);
+	printf("%s\n", nstr);
+	nstr = "Je teste cette string. Pas mal, n'est ce pas ?";
+	printf("%s\n", nstr);
+	
+	printf("\n--- END ---\n");
 	return (0);
 }

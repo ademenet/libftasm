@@ -11,12 +11,14 @@ SOURCES = 	ft_abs.s\
 			ft_memcpy.s\
 			ft_memset.s\
 			ft_putchar.s\
-			ft_putnbr.s\
 			ft_puts.s\
+			ft_putsfd.s\
 			ft_strcat.s\
 			ft_strchr.s\
+			ft_strclr.s\
 			ft_strdup.s\
 			ft_strlen.s\
+			ft_strnew.s\
 			ft_tolower.s\
 			ft_toupper.s
 
@@ -29,7 +31,6 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
-	# ld -macosx_version_min 10.7.0 $(OBJECTS)
 
 %.o: %.s ./libfts.h
 	nasm -f macho64 $<
@@ -39,14 +40,11 @@ tests: $(OBJECTS) tests.c
 	$(CC) ft_cat.c libfts.a -o ft_cat
 
 clean:
-	rm -rf $(OBJECTS)
+	rm -f $(OBJECTS)
 
-tclean:
-	# rm tests.o
-	# rm a.out
-
-fclean: clean tclean
-	rm $(NAME)
+fclean: clean
+	rm -f $(NAME)
+	rm -f tests ft_cat
 
 re: fclean all
 
