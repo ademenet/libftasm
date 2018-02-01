@@ -19,8 +19,6 @@ _ft_cat:
 	push		rdi
 	cmp			rdi, 0						; if (fd < 0) { goto end; }
 	jl			end
-	; mov			r8, rdi						; r8 = fd
-
 read:
 	mov			rax, MACH_SYSCALL(READ)		; read(fd(rdi), rsi(buff), rdx(size))
 	lea			rsi, [rel buffer.buff]

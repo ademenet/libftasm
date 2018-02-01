@@ -27,8 +27,7 @@ _ft_putsfd:
 	mov		rsi, rbx
 	mov		rax, MACH_SYSCALL(WRITE)
 	syscall
-	; lea		rsi, [rel string.newline]
-	mov		rsi, 10
+	lea		rsi, [rel string.newline]
 	mov		rdx, string.len
 	mov		rax, MACH_SYSCALL(WRITE)
 	syscall
